@@ -1,0 +1,52 @@
+var friends = [
+    {
+        "name":"Jake",
+        "photo":"https://dreadpen.com/wordpress/wp-content/uploads/2016/08/jake-the-dog-design.png",
+        "scores":[
+            "5",
+            "1",
+            "4",
+            "4",
+            "5",
+            "1",
+            "2",
+            "5",
+            "4",
+            "1"
+          ]
+      },
+      {
+        "name":"Finn",
+        "photo":"https://vignette.wikia.nocookie.net/fantendo/images/0/0a/DC_Finn_Mertens.png",
+        "scores":[
+            "1",
+            "1",
+            "3",
+            "3",
+            "5",
+            "1",
+            "2",
+            "5",
+            "4",
+            "1"
+          ]
+      },
+      {
+        "name":"Lumpy Space Princess",
+        "photo":"https://vignette.wikia.nocookie.net/adventuretimewithfinnandjake/images/9/9c/Lsp_2.png/revision/latest?cb=20130117092609",
+        "scores":[
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ]
+      },
+]
+
+module.exports = friends;

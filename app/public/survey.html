@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <title>Friend Finder App</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <h2>Survey Questions</h2>
+        
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">About You</h4>
+                <h5 class="card-subtitle mb-2 text-info">Name (Required)</h5>
+                <input type="text" id="name" class="form-control mb-2 validate" required>
+                <h5 class="card-subtitle mb-2 text-info">Link to Photo Image (Required)</h5>
+                <input type="text" id="photo" class="form-control validate" required>
+            </div>
+        </div>
+
+        <h3 class="mt-3"><strong>Question 1</strong></h3>
+        <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="q1">Options</label>
+            </div>
+            <select class="custom-select" id="q1">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+    
+        <h3><strong>Question 2</strong></h3>
+        <h4>Generally speaking, you rely more on your experience than your imagination.</h4>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="q2">Options</label>
+            </div>
+            <select class="custom-select" id="q2">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+    
+        <h3><strong>Question 3</strong></h3>
+        <h4>You find it easy to stay relaxed and focused even when there is some pressure.</h4>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="q3">Options</label>
+            </div>
+            <select class="custom-select" id="q3">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+    
+        <h3><strong>Question 4</strong></h3>
+        <h4>You rarely do something just out of sheer curiosity.</h4>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="q4">Options</label>
+            </div>
+            <select class="custom-select" id="q4">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+
+        <h3><strong>Question 5</strong></h3>
+        <h4>People can rarely upset you.</h4>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="q5">Options</label>
+            </div>
+            <select class="custom-select" id="q5">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+    
+        <h3><strong>Question 6</strong></h3>
+        <h4>It is often difficult for you to relate to other people’s feelings.</h4>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="q6">Options</label>
+            </div>
+            <select class="custom-select" id="q6">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+    
+        <h3><strong>Question 7</strong></h3>
+        <h4>In a discussion, truth should be more important than people’s sensitivities.</h4>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="q7">Options</label>
+            </div>
+            <select class="custom-select" id="q7">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+    
+        <h3><strong>Question 8</strong></h3>
+        <h4>You rarely get carried away by fantasies and ideas.</h4>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="q8">Options</label>
+            </div>
+            <select class="custom-select" id="q8">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+    
+        <h3><strong>Question 9</strong></h3>
+        <h4>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h4>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="q9">Options</label>
+            </div>
+            <select class="custom-select" id="q9">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+    
+        <h3><strong>Question 10</strong></h3>
+        <h4>You feel more energetic after spending time with a group of people.</h4>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="q10">Options</label>
+            </div>
+            <select class="custom-select" id="q10">
+                <option value=1>1 (Strongly Disagree)</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=5>5 (Strongly Agree)</option>
+            </select>
+        </div>
+    
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit" data-toggle="modal" data-target="#matchModal"><i class="fa fa-check-circle" aria-hidden="true"></i> 
+            Submit</button>
+    
+        <hr>
+        <footer class="footer">
+            <div class="container">
+            <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/afhaque/friendfinder">GitHub Repo</a></p>
+            </div>
+        </footer>
+        
+    </div>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="matchModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="matchModalLabel">Your Best Match Is...</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <!-- <span aria-hidden="true">&times;</span> -->
+              </button>
+            </div>
+            <div class="modal-body">
+                <h4><span id="matchName"></span></h4>
+                <br> 
+                <span><img id ="matchPic" style="max-width: 250px;" src="" alt=""></span>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" id="modalClose" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+    
+    </div>
+
+    <script type="text/javascript">
+        $(function () {
+
+            // $("#name").val("");
+            // $("#photo").val("");
+            // $("#q1").val("");
+            // $("#q2").val("");
+            // $("#q3").val("");
+            // $("#q4").val("");
+            // $("#q5").val("");
+            // $("#q6").val("");
+            // $("#q7").val("");
+            // $("#q8").val("");
+            // $("#q9").val("");
+            // $("#q10").val(""); 
+
+            $("#submit").on("click", function(event) {
+                event.preventDefault();
+                //console.log("I've been clicked!");
+
+                // function validation() {
+                //     var valid = true;
+                //     $(".validate").each(function () {
+                //         if ($(this).val() === "") {
+                //             return false;
+                //             alert("Please add your name and a photo.");
+                //         }
+                //     });
+
+                //     $(".custom-select").each(function () {
+                //         if ($(this).val() === "") {
+                //             return false;
+                //             alert("Please answer all the questions so we can match your correctly!");
+                //         }
+                //     });
+
+                //     return valid;
+                // };
+
+                // validation();
+
+                var newFriend = {
+                    name: $("#name").val().trim(),
+                    photo: $("#photo").val().trim(),
+                    scores: [
+                        $("#q1").val(),
+                        $("#q2").val(),
+                        $("#q3").val(),
+                        $("#q4").val(),
+                        $("#q5").val(),
+                        $("#q6").val(),
+                        $("#q7").val(),
+                        $("#q8").val(),
+                        $("#q9").val(),
+                        $("#q10").val() 
+                    ]
+                };
+
+                console.log(newFriend);
+
+                var currentURL = window.location.origin;
+
+                $.post(currentURL + "/api/friends", newFriend, function(data) {
+                    //Display the best match from the entire list to the current user
+                    $("#matchName").text(data.name);
+                    $("#matchPic").attr("src", data.photo);
+                });
+            });
+
+            $("#modalClose").on("click", function () {
+                event.preventDefault();
+
+                $("#name").val("");
+                $("#photo").val("");
+                $("#q1").val("");
+                $("#q2").val("");
+                $("#q3").val("");
+                $("#q4").val("");
+                $("#q5").val("");
+                $("#q6").val("");
+                $("#q7").val("");
+                $("#q8").val("");
+                $("#q9").val("");
+                $("#q10").val(""); 
+            });
+        });
+    </script>
+    
+</body>
+</html>
