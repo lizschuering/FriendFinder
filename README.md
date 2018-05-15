@@ -1,6 +1,6 @@
 # FriendFinder
 
-Check out the app at: 
+Available at: https://vast-ocean-21780.herokuapp.com/
 
 # What Does the App Do?
 
