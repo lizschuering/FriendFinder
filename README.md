@@ -1,6 +1,6 @@
 # FriendFinder
 
-Available at: https://vast-ocean-21780.herokuapp.com/
+Available at: https://dry-earth-34198.herokuapp.com/
 
 # What Does the App Do?
 
