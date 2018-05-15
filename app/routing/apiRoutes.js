@@ -1,6 +1,9 @@
 //Utilizing the data from the friends.js file
 var friends = require('../data/friends');
 
+//Adding the get-closest npm package which will be used to find the best match for the current user
+var getClosest = require("get-closest");
+
 module.exports = function (app) {
     //Route that displays all the data stored in the friends array
     app.get('/api/friends', function(request, response) {
@@ -32,20 +35,14 @@ module.exports = function (app) {
             scoresDiffArray.push(scoreDiff);
         }
 
-        //Use the score differentials in scoresDiffArray to find the index number of the best (ie. closest) match in the friends array
-        var bestMatch = 0;
-        
-        for(i=0; i<scoresDiffArray.length; i++){
-            if (scoresDiffArray[i] <= scoresDiffArray[bestMatch]){
-                bestMatch = i;
-            }
-        }
+        //Using the getClosest npm package to find the best match for the current user
+        var bestMatch = getClosest.number(0, scoresDiffArray);
 
         //Return the entire object for the best match from the friends array
         var bestMatchData = friends[bestMatch];
         response.json(bestMatchData);
 
-        console.log("Here is scoresDiffArray: ", scoresDiffArray);
+        // console.log("Here is scoresDiffArray: ", scoresDiffArray);
         console.log("Here is best match index number: ", bestMatch);
         console.log("Here is the object for the best match: ", bestMatchData); 
     });

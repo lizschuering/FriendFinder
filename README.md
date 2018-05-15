@@ -8,8 +8,9 @@ The Friend Finder is a compatability based matching app. The app takes in the us
 
 # How Did you Make the App?
 
-The app was made using with [Node.js](https://nodejs.org/en/) and the following NPM packages:
+The app was made using with [Node.js](https://nodejs.org/en/) and requires the following NPM packages:
 
 * [Express](https://www.npmjs.com/package/express)
 * [Body Parser](https://www.npmjs.com/package/body-parser)
+* [Get Closest](https://www.npmjs.com/package/get-closest)
 
