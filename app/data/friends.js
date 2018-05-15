@@ -1,3 +1,5 @@
+//Creating placeholder data to seed initial matches
+
 var friends = [
     {
         "name":"Jake",
@@ -45,6 +47,22 @@ var friends = [
             "1",
             "1",
             "1"
+          ]
+      },
+      {
+        "name":"Marceline",
+        "photo":"https://vignette.wikia.nocookie.net/adventuretimewithfinnandjake/images/e/e0/Marceline_Stock_Night.png/revision/latest/scale-to-width-down/130?cb=20121003133650",
+        "scores":[
+            "5",
+            "3",
+            "2",
+            "4",
+            "2",
+            "3",
+            "5",
+            "1",
+            "4",
+            "3"
           ]
       },
 ]
